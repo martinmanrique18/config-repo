@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: client-service
+
+# Configuración de Eureka
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} # ID de la instancia
+    preferIpAddress: true # Usar dirección IP en lugar de hostname
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ # URL del servidor Eureka
