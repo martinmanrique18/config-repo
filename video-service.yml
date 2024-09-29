@@ -1,7 +1,7 @@
 spring:
   application:
     name: video-service
-
+    port: 8081
 # Configuración de Eureka
 eureka:
   instance:
